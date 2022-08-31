@@ -1,0 +1,19 @@
+
+
+# GET http://localhost:3003/tasks/
+
+# GET http://localhost:3003/tasks/25e6d190-d0ee-4a5e-bd2b-cf4d74af48b0
+# POST http://localhost:3003/tasks/
+# Content-Type: application/x-www-form-urlencoded
+
+# title=Add response to task 2 is best
+# &description=Add response to task 2 description
+
+# PATCH http://localhost:3003/tasks/f51b1d90-1176-46c7-9ebe-27ee00cff15e/status
+# Content-Type: application/x-www-form-urlencoded
+
+# status=IN_PROGRESS
+
+# DELETE http://localhost:3003/tasks/97d8394f-1f52-48b8-9738-efadc30e017
+
+  GET http://localhost:3003/tasks/?status=OPEN&search=besto
