@@ -2,18 +2,35 @@
 
 # GET http://localhost:3003/tasks/
 
-# GET http://localhost:3003/tasks/25e6d190-d0ee-4a5e-bd2b-cf4d74af48b0
-# POST http://localhost:3003/tasks/
+# GET http://localhost:3003/tasks/1
+#   POST http://localhost:3003/tasks
 # Content-Type: application/x-www-form-urlencoded
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkV2ZW5Db29sZXJUZXN0VXNlciIsImlhdCI6MTY2MTc5NjQyMywiZXhwIjoxNjYxODAwMDIzfQ.Ny1DKtK9-hxaHnV4Lkqdfq6wZGXahCA4sK2x2VrhEoo
 
-# title=Add response to task 2 is best
+# title=Add response to task 2 is greater than task
 # &description=Add response to task 2 description
 
-# PATCH http://localhost:3003/tasks/f51b1d90-1176-46c7-9ebe-27ee00cff15e/status
+# PATCH http://localhost:3003/tasks/7/status
 # Content-Type: application/x-www-form-urlencoded
 
 # status=IN_PROGRESS
 
-# DELETE http://localhost:3003/tasks/97d8394f-1f52-48b8-9738-efadc30e017
+# DELETE http://localhost:3003/tasks/3
 
-  GET http://localhost:3003/tasks/?status=OPEN&search=besto
+  GET http://localhost:3003/tasks/
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkV2ZW5Db29sZXJUZXN0VXNlciIsImlhdCI6MTY2MTc5NjQyMywiZXhwIjoxNjYxODAwMDIzfQ.Ny1DKtK9-hxaHnV4Lkqdfq6wZGXahCA4sK2x2VrhEoo
+#   POST http://localhost:3003/auth/signup/
+# Content-Type: application/x-www-form-urlencoded
+
+# username=EvenCoolerTestUser
+# &password=Password3!
+
+#   POST http://localhost:3003/auth/signin/
+# Content-Type: application/x-www-form-urlencoded
+
+# username=EvenCoolerTestUser
+# &password=Password3!
+
+#   POST http://localhost:3003/auth/test/
+# Content-Type: application/x-www-form-urlencoded
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkV2ZW5Db29sZXJUZXN0VXNlciIsImlhdCI6MTY2MTc5MzM3OSwiZXhwIjoxNjYxNzk2OTc5fQ.j7Mn_H57TaiOD3mQ6cQPCOdP6JoSxqn5o_9-GzGMy2I
