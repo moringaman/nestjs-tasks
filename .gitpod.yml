@@ -6,7 +6,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: | 
-      ./bin/gitpod_setup.sh
+      ./bin/postgres_setup.sh
       yarn install
       yarn run build
     command: yarn run start:dev
