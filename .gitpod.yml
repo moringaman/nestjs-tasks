@@ -5,11 +5,12 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: | 
-      ./bin/postgres_setup.sh
+  - init: |   
       yarn install
       yarn run build
-    command: yarn run start:dev
+    command: | 
+      sh ./bin/postgres_setup.sh
+      yarn run start:dev
 ports:
   - port: 3003
     onOpen: ignore
