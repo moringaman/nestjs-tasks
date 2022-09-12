@@ -1,4 +1,4 @@
-import { Controller, Post, Body, ValidationPipe, UseGuards, Req } from '@nestjs/common';
+import { Controller, Post, Body, ValidationPipe, UseGuards, Req, Get } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from './auth.service';
 import { AuthCredentialsDto } from './dto/auth.credentials.dto';
@@ -8,6 +8,11 @@ import { User } from './user.entity'
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
+
+  @Get('/')
+  welcome() {
+    return 'welcome to the tasks api'
+  }
 
   @Post('/signup')
   signUp(
