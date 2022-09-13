@@ -8,8 +8,8 @@ tasks:
   - init: |   
       yarn install
       yarn run build
+    before: sh ./bin/postgres_setup.sh
     command: | 
-      sh ./bin/postgres_setup.sh
       yarn run start:dev
 ports:
   - port: 3003
