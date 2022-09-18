@@ -13,6 +13,8 @@ tasks:
       yarn run start:dev
 ports:
   - port: 3003
+    visibility: public
     onOpen: ignore
   - port: 5432
+    visibility: public
     onOpen: ignore
